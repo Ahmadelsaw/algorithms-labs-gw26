@@ -6,9 +6,13 @@ def fibonacci(n):
         raise ValueError("Fibonacci is not defined for negative integers")
 
     # TODO: Add the base case. Note: Fib(0) is 0; Fib(1) is 1; Fib(2) is 1, so on.
+    if n == 0:
+        return 0
+    if n == 1:
+        return 1
 
-    # TODO: Return fibonacci: 
-    raise NotImplementedError("Complete fibonacci")
+    # TODO: Return fibonacci:
+    return fibonacci(n - 1) + fibonacci(n - 2)
 
 
 def main():
